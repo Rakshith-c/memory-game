@@ -91,6 +91,39 @@
             color: #ff4b5c;
             margin-top: 20px;
         }
+        @media screen and (min-width: 600px) {
+            .game-board {
+                grid-template-columns: repeat(5, 100px);
+                gap: 15px;
+            }
+            .card {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+ @media screen and (max-width: 599px) {
+            .game-board {
+                grid-template-columns: repeat(4, 70px);
+                gap: 8px;
+            }
+            .card {
+                width: 70px;
+                height: 70px;
+                font-size: 1.5em;
+            }
+        }
+@media screen and (max-width: 400px) {
+            .game-board {
+                grid-template-columns: repeat(3, 60px);
+                gap: 5px;
+            }
+            .card {
+                width: 60px;
+                height: 60px;
+                font-size: 1.2em;
+            }
+        }
     </style>
 </head>
 <body>
